@@ -1,0 +1,73 @@
+html, body{
+    height: 98%;
+}
+body{
+    background: linear-gradient(-45deg, rgb(1, 1, 58),  #2a0d46, rgb(48, 0, 48), rgb(109, 50, 2), rgb(54, 33, 0));
+    background-size : 600% 600%;
+    animation : bg 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes bg {
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+header{
+    float: right;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+h2, h5{
+    text-align: center;
+    color:white;
+}
+h2{
+    padding: 10px 15px;
+    border: solid white 1px;
+    font-family : Verdana, Helvetica, sans-serif;
+    font-weight: 150;
+    font-size: 50px;
+    margin: 0;
+}
+h5{
+    font-size: 15px;
+    font-weight: 200;
+    font-family: monospace;
+    margin: 0;
+}
+.socials{
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    margin: 2px;
+}
+.socials:hover{
+    transform: scale(1.25);
+}
+.loader{
+    border: solid 16px transparent;
+    border-top:solid 16px white;
+    animation: spin 3s linear infinite;
+    border-radius: 50%;
+    height: 120px;
+    width: 120px;
+    margin: 20px auto;
+}
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
